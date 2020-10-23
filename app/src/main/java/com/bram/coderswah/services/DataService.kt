@@ -5,10 +5,22 @@ import com.bram.coderswah.model.Product
 
 object DataService {
     val categories = listOf(
-        Category("SHIRTS","shirtImage"),
+        Category("SHIRTS","shirtimage"),
         Category("HOODIES","hoodieimage"),
         Category("HATS", "hatimage"),
-        Category("DITIGAL", "digitalgoodimages")
+        Category("DIGITAL", "digitalgoodsimage"),
+        Category("SHIRTS","shirtimage"),
+        Category("HOODIES","hoodieimage"),
+        Category("HATS", "hatimage"),
+        Category("DIGITAL", "digitalgoodsimage"),
+        Category("SHIRTS","shirtimage"),
+        Category("HOODIES","hoodieimage"),
+        Category("HATS", "hatimage"),
+        Category("DIGITAL", "digitalgoodsimage"),
+        Category("SHIRTS","shirtimage"),
+        Category("HOODIES","hoodieimage"),
+        Category("HATS", "hatimage"),
+        Category("DIGITAL", "digitalgoodsimage")
     )
 
     val products = listOf(
