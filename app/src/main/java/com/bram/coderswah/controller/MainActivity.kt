@@ -1,7 +1,8 @@
-package com.bram.coderswah
+package com.bram.coderswah.controller
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bram.coderswah.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
