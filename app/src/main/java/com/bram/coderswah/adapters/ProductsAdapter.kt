@@ -12,7 +12,7 @@ import com.bram.coderswah.model.Product
 import kotlinx.android.synthetic.main.product_list_item.view.*
 import org.w3c.dom.Text
 
-class ProductsAdapter(val context: Context, val products: List<Product>) : RecyclerView.Adapter<ProductsAdapter.ProductHolder>() {
+class ProductsAdapter(val context: Context, val products: List<Product>, val itemClick: (Product) -> Unit) : RecyclerView.Adapter<ProductsAdapter.ProductHolder>() {
 
     inner class ProductHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val productImage = itemView.findViewById<ImageView>(R.id.productImg)
@@ -24,6 +24,8 @@ class ProductsAdapter(val context: Context, val products: List<Product>) : Recyc
             productImage?.setImageResource(resourceId)
             productName.text = product.title
             productPrice.text = product.price
+
+            itemView.setOnClickListener { itemClick(product) }
         }
     }
 
